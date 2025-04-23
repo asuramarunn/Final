@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest Detections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .camera-select {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        .frames-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .frame-card {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: slideDown 0.3s ease-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .frame-image {
+            width: 480px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .frame-info {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .metadata {
+            margin-bottom: 20px;
+        }
+        .metadata p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .metadata strong {
+            color: #333;
+        }
+        .captions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .caption-item {
+            background-color: #e3e6ec;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        select, button {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .timestamp {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .no-frames {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="camera-select">
+        <h1>Latest Detections</h1>
+        <select id="camera" onchange="loadFrames()">
+            {% for i in range(num_cameras) %}
+            <option value="{{ i }}">Camera {{ i }}</option>
+            {% endfor %}
+        </select>
+        <button onclick="loadFrames()">Refresh</button>
+        <button onclick="startAutoRefresh()">Auto Refresh</button>
+        <button onclick="stopAutoRefresh()">Stop Auto Refresh</button>
+    </div>
+    
+    <div id="frames-container" class="frames-container"></div>
+
+    <script>
+        let autoRefreshInterval;
+        
+        function startAutoRefresh() {
+            autoRefreshInterval = setInterval(loadFrames, 5000);
+        }
+        
+        function stopAutoRefresh() {
+            clearInterval(autoRefreshInterval);
+        }
+        
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp);
+            return date.toLocaleString();
+        }
+        
+        function loadFrames() {
+            const cameraId = document.getElementById('camera').value;
+            fetch(`/get_frames/${cameraId}`)
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('frames-container');
+                    
+                    if (data.length === 0) {
+                        container.innerHTML = '<div class="no-frames">No detections found for this camera</div>';
+                        return;
+                    }
+                    
+                    container.innerHTML = data.map(frame => `
+                        <div class="frame-card">
+                            <img src="data:image/jpeg;base64,${frame.frame}" class="frame-image">
+                            <div class="frame-info">
+                                <div class="metadata">
+                                    <p><strong>Camera:</strong> ${frame.camera_id}</p>
+                                    <p><strong>Time:</strong> ${formatTimestamp(frame.timestamp)}</p>
+                                    <p><strong>FPS:</strong> ${frame.fps.toFixed(2)}</p>
+                                </div>
+                                <div class="captions">
+                                    <h3>Detections:</h3>
+                                    ${frame.captions.map(caption => 
+                                        `<div class="caption-item">${caption}</div>`
+                                    ).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                })
+                .catch(error => console.error('Error:', error));
+        }
+        
+        window.onload = loadFrames;
+    </script>
+</body>
+</html>

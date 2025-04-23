@@ -1,0 +1,4653 @@
+{
+    "Hair": [
+        {
+            "style": "long",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "long",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "short",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "curly",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "straight",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "wavy",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "ponytail",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "braided",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "bun",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "pigtails",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "afro",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "dreadlocks",
+            "color": "platinum blonde",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "blonde",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "auburn",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "ginger",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "brunette",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "strawberry blonde",
+            "value": -1
+        },
+        {
+            "style": "bangs",
+            "color": "platinum blonde",
+            "value": -1
+        }
+    ],
+    "Upper Body Clothing": [
+        {
+            "type": "T-shirt",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "T-shirt",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Shirt",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Blouse",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Sweater",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Jacket",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Coat",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Hoodie",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Blazer",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Vest",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Tank top",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Cardigan",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Polo",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Tunic",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Crop top",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Lower Body Clothing": [
+        {
+            "type": "Pants",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Pants",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Jeans",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Shorts",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Leggings",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Skirt",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Sweatpants",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Outerwear": [
+        {
+            "type": "Raincoat",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Raincoat",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Windbreaker",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Overcoat",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Poncho",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Leather jacket",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Dresses": [
+        {
+            "type": "Dress",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Dress",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Sundress",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Footwear": [
+        {
+            "type": "Shoes",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Shoes",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Boots",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Sneakers",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Sandals",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Slippers",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Heels",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Flip-flops",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Headwear": [
+        {
+            "type": "Hat",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Hat",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Cap",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Beanie",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Helmet",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Headband",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Visor",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Specialty Clothing": [
+        {
+            "type": "Suit",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Suit",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Gown",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Uniform",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Kimono",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Robe",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Swimsuit",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Apron",
+            "color": "bronze",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "red",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "blue",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "green",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "yellow",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "purple",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "orange",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "pink",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "brown",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "black",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "white",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "gray",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "navy",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "maroon",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "gold",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "silver",
+            "value": -1
+        },
+        {
+            "type": "Costume",
+            "color": "bronze",
+            "value": -1
+        }
+    ],
+    "Gender and Age": [
+        {
+            "type": "Male",
+            "value": -1
+        },
+        {
+            "type": "Female",
+            "value": -1
+        },
+        {
+            "type": "Non-binary",
+            "value": -1
+        },
+        {
+            "type": "Boy",
+            "value": -1
+        },
+        {
+            "type": "Girl",
+            "value": -1
+        },
+        {
+            "type": "Man",
+            "value": -1
+        },
+        {
+            "type": "Woman",
+            "value": -1
+        },
+        {
+            "type": "Child",
+            "value": -1
+        },
+        {
+            "type": "Adult",
+            "value": -1
+        },
+        {
+            "type": "Senior",
+            "value": -1
+        },
+        {
+            "type": "Baby",
+            "value": -1
+        },
+        {
+            "type": "Teenager",
+            "value": -1
+        },
+        {
+            "type": "Elder",
+            "value": -1
+        }
+    ]
+}
+
