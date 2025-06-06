@@ -1,2 +1,1 @@
-Create folder weight
-Download SigLIP weight from: https://www.kaggle.com/models/asuramarunnn/siglip_finetune_fix_labels/
+Create folder weight and download SigLIP weight from: https://www.kaggle.com/models/asuramarunnn/siglip_finetune_fix_labels/
