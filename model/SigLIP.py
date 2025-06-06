@@ -11,6 +11,8 @@ from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import KFold
 import random
 from torch.optim import AdamW
+import traceback
+
 
 class AverageMeter:
     def __init__(self):
@@ -46,6 +48,43 @@ class MultiLabelDataset(Dataset):
     def __len__(self):
         return len(self.df)
 
+class InferDataset(Dataset):
+    def __init__(self, path, transform):
+            self.path = path
+            self.transform = transform
+
+            self.jpg_files = []
+            for root, dirs, files in os.walk(path):
+                for file in files:
+                    if file.lower().endswith('.jpg') or file.lower().endswith(".png") or file.lower().endswith(".PNG"):
+                        full_path = os.path.join(root, file)
+                        self.jpg_files.append(full_path)
+
+    def __len__(self):
+        return len(self.jpg_files)
+
+    def __getitem__(self, idx):
+    
+        image_path = self.jpg_files[idx]
+        image = Image.open(image_path).convert("RGB")
+        pixel_values = self.transform(image)
+        return pixel_values, image_path
+
+# def data_infer_transform(data_path):
+#     size = 384
+#     mean = [0.5, 0.5, 0.5]
+#     std = [0.5, 0.5, 0.5]
+
+#     transform = Compose([
+#         Resize((size, size)),
+#         ToTensor(),
+#         Normalize(mean=mean, std=std),
+#     ])
+
+#     dataset = InferDataset(data_path, transform=transform)
+
+#     return dataset
+
 def load_and_split_data(csv_path, root_path, processor, train_ratio=0.8, batch_size=2):
     df = pd.read_csv(csv_path)
     labels = list(df.columns)[2:]
@@ -69,19 +108,19 @@ def load_and_split_data(csv_path, root_path, processor, train_ratio=0.8, batch_s
     torch.manual_seed(42)
     train_subset, val_subset = random_split(dataset, [train_size, val_size])
 
-    def collate_fn(batch):
-        data = torch.stack([item[0] for item in batch])
-        target = torch.stack([item[1] for item in batch])
-        return data, target
+# def collate_fn(batch):
+#     data = torch.stack([item[0] for item in batch])
+#     target = torch.stack([item[1] for item in batch])
+#     return data, target
 
-    train_dataloader = DataLoader(
-        train_subset, batch_size=batch_size, shuffle=True, collate_fn=collate_fn, num_workers=2, pin_memory=True
-    )
-    val_dataloader = DataLoader(
-        val_subset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn, num_workers=2, pin_memory=True
-    )
+# # train_dataloader = DataLoader(
+# #     train_subset, batch_size=batch_size, shuffle=True, collate_fn=collate_fn, num_workers=2, pin_memory=True
+# # )
+# # val_dataloader = DataLoader(
+# #     val_subset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn, num_workers=2, pin_memory=True
+# # )
 
-    return train_dataloader, val_dataloader, id2label
+# #     return train_dataloader, val_dataloader, id2label
 
 def load_model(model_id, id2label, ckpt_path=None, device=None):
     if device is None:
@@ -90,7 +129,7 @@ def load_model(model_id, id2label, ckpt_path=None, device=None):
     processor = AutoImageProcessor.from_pretrained(model_id)
     model = AutoModelForImageClassification.from_pretrained(
         model_id, problem_type="multi_label_classification", id2label=id2label, ignore_mismatched_sizes=True
-    )
+        )
     model = model.to(device)
 
     if ckpt_path:
@@ -99,7 +138,7 @@ def load_model(model_id, id2label, ckpt_path=None, device=None):
         model.load_state_dict(state_dict, strict=False)
 
     model.eval()
-    return model, processor, device
+    return model
 
 def evaluate(model, val_dataloader, device):
     model.eval()
@@ -166,10 +205,10 @@ def train_model(model, train_dataloader, val_dataloader, device, num_epochs=30, 
 def infer_image(pixel_values, model, device, threshold=0.5):
     pixel_values = pixel_values.to(device)
     with torch.no_grad():
-        outputs = model(pixel_values.unsqueeze(0))
+        outputs = model(pixel_values.unsqueeze(0))  # Thêm batch dimension
         logits = outputs.logits
     probs = torch.sigmoid(logits)
-    preds = (probs > threshold).float().cpu().numpy()[0]
+    preds = (probs > threshold).float().cpu().numpy()[0]  # [num_labels]
     return preds
 
 def infer_test_set(test_csv, test_root, model, processor, device, id2label, num_images=500, threshold=0.6):
@@ -255,3 +294,50 @@ def evaluate_inference():
         df_results.to_csv(output_path, index=False)
         print(f"\nFold {fold} evaluation results saved to {output_path}")
 
+if __name__ == "__main__":
+    
+    model_id = "google/siglip-so400m-patch14-384"
+    id2label = {0: 'accessoryHeadphone', 1: 'personalLess15', 2: 'personalLess30', 3: 'personalLess45', 4: 'personalLess60', 5: 'personalLarger60', 6: 'carryingBackpack', 7: 'hairBald', 8: 'footwearBoots', 9: 'lowerBodyCapri', 10: 'carryingOther', 11: 'carryingShoppingTro', 12: 'carryingUmbrella', 13: 'lowerBodyCasual', 14: 'upperBodyCasual', 15: 'personalFemale', 16: 'carryingFolder', 17: 'lowerBodyFormal', 18: 'upperBodyFormal', 19: 'accessoryHairBand', 20: 'accessoryHat', 21: 'lowerBodyHotPants', 22: 'upperBodyJacket', 23: 'lowerBodyJeans', 24: 'accessoryKerchief', 25: 'footwearLeatherShoes', 26: 'upperBodyLogo', 27: 'hairLong', 28: 'lowerBodyLongSkirt', 29: 'upperBodyLongSleeve', 30: 'lowerBodyPlaid', 31: 'lowerBodyThinStripes', 32: 'carryingLuggageCase', 33: 'personalMale', 34: 'carryingMessengerBag', 35: 'accessoryMuffler', 36: 'accessoryNothing', 37: 'carryingNothing', 38: 'upperBodyNoSleeve', 39: 'upperBodyPlaid', 40: 'carryingPlasticBags', 41: 'footwearSandals', 42: 'footwearShoes', 43: 'hairShort', 44: 'lowerBodyShorts', 45: 'upperBodyShortSleeve', 46: 'lowerBodyShortSkirt', 47: 'footwearSneaker', 48: 'footwearStocking', 49: 'upperBodyThinStripes', 50: 'upperBodySuit', 51: 'carryingSuitcase', 52: 'lowerBodySuits', 53: 'accessorySunglasses', 54: 'upperBodySweater', 55: 'upperBodyThickStripes', 56: 'lowerBodyTrousers', 57: 'upperBodyTshirt', 58: 'upperBodyOther', 59: 'upperBodyVNeck', 60: 'footwearBlack', 61: 'footwearBlue', 62: 'footwearBrown', 63: 'footwearGreen', 64: 'footwearGrey', 65: 'footwearOrange', 66: 'footwearPink', 67: 'footwearPurple', 68: 'footwearRed', 69: 'footwearWhite', 70: 'footwearYellow', 71: 'hairBlack', 72: 'hairBlue', 73: 'hairBrown', 74: 'hairGreen', 75: 'hairGrey', 76: 'hairOrange', 77: 'hairPink', 78: 'hairPurple', 79: 'hairRed', 80: 'hairWhite', 81: 'hairYellow', 82: 'lowerBodyBlack', 83: 'lowerBodyBlue', 84: 'lowerBodyBrown', 85: 'lowerBodyGreen', 86: 'lowerBodyGrey', 87: 'lowerBodyOrange', 88: 'lowerBodyPink', 89: 'lowerBodyPurple', 90: 'lowerBodyRed', 91: 'lowerBodyWhite', 92: 'lowerBodyYellow', 93: 'upperBodyBlack', 94: 'upperBodyBlue', 95: 'upperBodyBrown', 96: 'upperBodyGreen', 97: 'upperBodyGrey', 98: 'upperBodyOrange', 99: 'upperBodyPink', 100: 'upperBodyPurple', 101: 'upperBodyRed', 102: 'upperBodyWhite', 103: 'upperBodyYellow'}
+    ckpt_path = "../weights/SigLIP/best_model.pth"
+
+    size = 384
+    mean = [0.5, 0.5, 0.5]
+    std = [0.5, 0.5, 0.5]
+
+    transform = Compose([
+        Resize((size, size)),
+        ToTensor(),
+        Normalize(mean=mean, std=std),
+    ])
+
+    dataset = InferDataset("../data/cropped_persons", transform=transform)
+    print(f"Number of images found: {len(dataset)}")
+
+    device = "cpu"
+    model = load_model(model_id, id2label, ckpt_path=ckpt_path)
+    print("Model loaded!")
+
+    try:
+        model.eval()
+        results = []
+
+        for i in range(len(dataset)):
+            pixel_values, image_path = dataset[i]
+
+            pred = infer_image(pixel_values, model, device, threshold=0.8)
+            pred_label_names = [id2label[j] for j, p in enumerate(pred) if p == 1]
+
+
+            results.append({
+                'image': image_path,
+                'predicted_labels': ', '.join(pred_label_names)
+            })
+
+        # Lưu kết quả dự đoán vào file CSV
+        df_results = pd.DataFrame(results)
+        df_results.to_csv('../data/cropped_persons/inference_person_2.csv', index=False)
+        print(f"Saved inference results for {len(results)} images")
+
+    except Exception as e:
+        print("Error loading or running the model:", e)
+        traceback.print_exc()

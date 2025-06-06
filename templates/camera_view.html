@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera {{ camera_id }} View</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        nav {
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #dbeafe;
+        }
+        main {
+            max-width: 960px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .camera-container {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .camera-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        #frame-img {
+            max-width: 100%;
+            width: 480px;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: linear-gradient(90deg, #16a34a, #22c55e);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #15803d, #16a34a);
+        }
+        #result {
+            flex: 1;
+            text-align: left;
+            max-width: 100%; /* Giới hạn chiều rộng tối đa */
+            word-break: break-word; /* Ngắt từ khi cần */
+            overflow-wrap: break-word; /* Xử lý văn bản dài */
+            white-space: pre-wrap; /* Giữ định dạng nhưng ngắt dòng */
+        }
+        #result p {
+            font-weight: bold;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            max-width: 100%; /* Đảm bảo không tràn */
+            word-break: break-word; /* Ngắt từ trong p */
+            overflow-wrap: break-word; /* Xử lý văn bản dài trong p */
+        }
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.25rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            .camera-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            #frame-img {
+                width: 100%;
+                max-width: 480px;
+            }
+            .camera-left {
+                width: 100%;
+                max-width: 480px;
+            }
+            #result {
+                text-align: center;
+                width: 100%;
+                max-width: 100%; /* Đảm bảo không tràn trên màn hình nhỏ */
+            }
+            button {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+            #result p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/">Home</a>
+            <a href="/search">Search</a>
+        </div>
+    </nav>
+    <main>
+        <h2>🎥 Camera {{ camera_id }}</h2>
+        <div class="camera-container">
+            <div class="camera-left">
+                <img id="frame-img" src="/camera/{{ camera_id }}" width="480" />
+                <button onclick="analyze()">🔍 Analyze</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="/static/labels.js"></script> <!-- Nhúng file labels.js -->
+    <script>
+        function analyze() {
+            fetch('/analyze_captured/{{ camera_id }}', {
+                method: 'POST'
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.image_url) {
+                    document.getElementById("frame-img").src = data.image_url;
+
+                    const capHTML = data.captions.map(c => {
+                        const translatedLabels = c.caption.map(label => {
+                            const trimmed = label.trim(); // loại bỏ khoảng trắng
+                            return labelToVietnamese[trimmed] || trimmed;
+                        });
+                        const captionText = translatedLabels.join(', ');
+                        return `<p style="color: rgb(${c.color[0]}, ${c.color[1]}, ${c.color[2]})">${captionText}</p>`;
+                    }).join('');
+
+                    document.getElementById("result").innerHTML = capHTML;
+                } else {
+                    alert("❌ Không thể phân tích ảnh.");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

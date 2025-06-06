@@ -1,84 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Multi-Camera Stream</title>
+    <title>Camera Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 20px; 
-            background-color: #ffffff;
-            color: #ffffff;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #1e1e1e;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        nav {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
-        .camera-container { 
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-            gap: 20px; 
-            margin-bottom: 30px;
-            justify-items: center;
+        .nav-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 1.5rem;
         }
-        .camera { 
-            background-color: #333333;
-            border: 2px solid #333;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            transition: transform 0.2s;
-        }
-        .camera:hover {
-            transform: scale(1.02);
-            border-color: #ffffff;
-        }
-        .camera h2 { 
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #ffffff;
-            text-align: center;
-        }
-        .camera img {
-            width: 100%;
-            max-width: 480px;
-            height: auto;
-            border-radius: 5px;
-            border: 1px solid #333;
-        }
-        .search-link {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .search-link a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            color: #000000;
+        nav a {
+            color: white;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s;
+            font-size: 1rem;
         }
-        .search-link a:hover {
-            background-color: #00cc00;
-            transform: scale(1.05);
+        nav a:hover {
+            color: #dbeafe;
+        }
+        body {
+            background-color: #f8fafc;
+        }
+        h1 {
+            font-size: 1.75rem;
+            color: #1e293b;
+            margin: 1.5rem auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            max-width: 960px;
+        }
+        .camera-grid {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0 1rem;
+            justify-content: center;
+        }
+        .camera-cell {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #d1d5db;
+            position: relative;
+            cursor: pointer;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .camera-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .camera-label {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.25rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            .camera-cell {
+                width: 100%;
+                max-width: 280px;
+                height: 180px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Multi-Camera Surveillance System</h1>
-    </div>
-    
-    <div class="camera-container">
-        {% for i in range(num_cameras) %}
-        <div class="camera">
-            <h2>Camera {{ i + 1 }}</h2>
-            <img src="{{ url_for('video_feed', camera_id=i) }}" alt="Camera {{ i + 1 }} Feed">
+    <nav>
+        <div class="nav-container">
+            <a href="/">Home</a>
+            <a href="/search">Search</a>
         </div>
+    </nav>
+    <h1>📹 Live Camera Streams</h1>
+    <div class="camera-grid">
+        {% for i in range(num_cameras) %}
+            <div class="camera-cell" onclick="location.href='/camera_view/{{ i }}'">
+                <img src="/camera/{{ i }}" alt="Camera {{ i }}">
+                <div class="camera-label">Camera {{ i }}</div>
+            </div>
         {% endfor %}
     </div>
 </body>

@@ -5,8 +5,8 @@ import pandas as pd
 # img_dir_lst = ["/Users/Acer/Downloads/PETA_dataset/3DPeS/archive", "/Users/Acer/Downloads/PETA_dataset/CUHK/archive"] 
 # label_path_lst = ["/Users/Acer/Downloads/PETA_dataset/3DPeS/archive/Label.txt", "/Users/Acer/Downloads/PETA_dataset/CUHK/archive/Label.txt"]
 
-img_dir_lst = ["/Users/Acer/Downloads/PETA_dataset/CAVIAR4REID/archive"] 
-label_path_lst = ["/Users/Acer/Downloads/PETA_dataset/CAVIAR4REID/archive/Label.txt"]
+img_dir_lst = ["/Users/Acer/Downloads/PETA_dataset/PRID/archive"] 
+label_path_lst = ["/Users/Acer/Downloads/PETA_dataset/PRID/archive/Label.txt"]
 
 
 # Danh sách các thuộc tính nhị phân
@@ -77,4 +77,4 @@ for img_dir, label_path in zip(img_dir_lst, label_path_lst):
 # Tạo DataFrame và lưu
 df = pd.DataFrame(all_records, columns=columns)
 df.to_csv("image_attributes_test.csv", index=False)
-print("✅ CSV saved: image_attributes_test.csv")
+print("✅ CSV saved: image_attributes_testing_prid.csv")

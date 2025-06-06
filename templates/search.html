@@ -2,169 +2,259 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Latest Detections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Detections</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
-            padding: 20px;
-            background-color: #f0f2f5;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        .camera-select {
+        body {
+            background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%); /* Gradient background */
+        }
+        nav {
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Gradient navigation */
+            color: white;
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            z-index: 100;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #dbeafe;
+        }
+        main {
+            max-width: 960px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+        }
+        h1 {
+            font-size: 1.75rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .search-form {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-form label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.9rem;
+            color: #1e293b;
+        }
+        .search-form input {
+            padding: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            width: 180px;
+        }
+        .search-form button {
+            background: linear-gradient(90deg, #16a34a, #22c55e); /* Gradient button */
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .search-form button:hover {
+            background: linear-gradient(90deg, #15803d, #16a34a);
         }
         .frames-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 1rem;
         }
         .frame-card {
             display: flex;
+            align-items: flex-start;
             background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            animation: slideDown 0.3s ease-out;
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         .frame-image {
-            width: 480px;
-            height: 360px;
-            object-fit: cover;
+            width: 150px;
+            margin-right: 1rem;
+        }
+        .frame-image img {
+            width: 100%;
+            height: auto;
             border-radius: 4px;
+            object-fit: contain;
+            border: 1px solid #d1d5db;
         }
         .frame-info {
             flex: 1;
-            padding: 0 20px;
         }
-        .metadata {
-            margin-bottom: 20px;
+        .frame-info p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #1e293b;
         }
-        .metadata p {
-            margin: 5px 0;
-            color: #666;
+        .captions-list {
+            margin-top: 0.75rem;
         }
-        .metadata strong {
-            color: #333;
-        }
-        .captions {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 4px;
+        .captions-list strong {
+            font-size: 0.9rem;
+            color: #1e293b;
         }
         .caption-item {
-            background-color: #e3e6ec;
-            padding: 8px 12px;
-            margin: 5px 0;
+            background: #e2e8f0;
+            margin: 0.25rem 0;
+            padding: 0.5rem;
             border-radius: 4px;
-            font-size: 14px;
+            font-size: 0.85rem;
+            color: #1e293b;
         }
-        select, button {
-            padding: 8px 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .timestamp {
-            font-size: 0.9em;
-            color: #666;
-        }
-        .no-frames {
+        .no-results {
             text-align: center;
-            padding: 40px;
-            background: white;
-            border-radius: 8px;
-            color: #666;
+            color: #64748b;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.25rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            .search-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-form input {
+                width: 100%;
+            }
+            .search-form button {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+            .frame-card {
+                flex-direction: column;
+                align-items: center;
+            }
+            .frame-image {
+                width: 100%;
+                max-width: 200px;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            .frame-info p,
+            .captions-list strong,
+            .caption-item {
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="camera-select">
-        <h1>Latest Detections</h1>
-        <select id="camera" onchange="loadFrames()">
-            {% for i in range(num_cameras) %}
-            <option value="{{ i }}">Camera {{ i }}</option>
+    <nav>
+        <div class="nav-container">
+            <a href="/">Home</a>
+            <a href="/search">Search</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Search Detections</h1>
+        <form class="search-form" method="POST">
+            <label>Camera ID:
+                <input type="number" name="camera_id" required>
+            </label>
+            <label>Date (yyyy-mm-dd):
+                <input type="date" name="date">
+            </label>
+            <label>Keyword in caption:
+                <input type="text" name="keyword">
+            </label>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if results %}
+        <div class="frames-container">
+            {% for r in results %}
+            <div class="frame-card">
+                <div class="frame-image">
+                    <img src="data:image/jpeg;base64,{{ r.frame }}" style="image-rendering: pixelated;">
+                </div>
+                <div class="frame-info">
+                    <p><strong>Camera:</strong> {{ r.camera_id }}</p>
+                    <p><strong>Time:</strong> {{ r.timestamp }}</p>
+                    <p><strong>FPS:</strong> {{ r.fps }}</p>
+                    <div class="captions-list" data-captions='{{ r.captions | tojson | safe }}'>
+                        <strong>Captions:</strong>
+                        {% for c in r.captions %}
+                            <div class="caption-item">{{ c }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
             {% endfor %}
-        </select>
-        <button onclick="loadFrames()">Refresh</button>
-        <button onclick="startAutoRefresh()">Auto Refresh</button>
-        <button onclick="stopAutoRefresh()">Stop Auto Refresh</button>
-    </div>
-    
-    <div id="frames-container" class="frames-container"></div>
+        </div>
+        {% elif searched %}
+            <p class="no-results">No results found.</p>
+        {% endif %}
+    </main>
+
+    <!-- labels.js chứa labelToVietnamese -->
+    <script src="/static/labels.js"></script>
 
     <script>
-        let autoRefreshInterval;
-        
-        function startAutoRefresh() {
-            autoRefreshInterval = setInterval(loadFrames, 5000);
-        }
-        
-        function stopAutoRefresh() {
-            clearInterval(autoRefreshInterval);
-        }
-        
-        function formatTimestamp(timestamp) {
-            const date = new Date(timestamp);
-            return date.toLocaleString();
-        }
-        
-        function loadFrames() {
-            const cameraId = document.getElementById('camera').value;
-            fetch(`/get_frames/${cameraId}`)
-                .then(response => response.json())
-                .then(data => {
-                    const container = document.getElementById('frames-container');
-                    
-                    if (data.length === 0) {
-                        container.innerHTML = '<div class="no-frames">No detections found for this camera</div>';
-                        return;
-                    }
-                    
-                    container.innerHTML = data.map(frame => `
-                        <div class="frame-card">
-                            <img src="data:image/jpeg;base64,${frame.frame}" class="frame-image">
-                            <div class="frame-info">
-                                <div class="metadata">
-                                    <p><strong>Camera:</strong> ${frame.camera_id}</p>
-                                    <p><strong>Time:</strong> ${formatTimestamp(frame.timestamp)}</p>
-                                    <p><strong>FPS:</strong> ${frame.fps.toFixed(2)}</p>
-                                </div>
-                                <div class="captions">
-                                    <h3>Detections:</h3>
-                                    ${frame.captions.map(caption => 
-                                        `<div class="caption-item">${caption}</div>`
-                                    ).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    `).join('');
-                })
-                .catch(error => console.error('Error:', error));
-        }
-        
-        window.onload = loadFrames;
+        document.addEventListener('DOMContentLoaded', () => {
+            const captionLists = document.querySelectorAll('.captions-list');
+            captionLists.forEach(list => {
+                const dataAttr = list.getAttribute('data-captions');
+                if (!dataAttr) return;
+
+                let captions;
+                try {
+                    captions = JSON.parse(dataAttr);
+                } catch (e) {
+                    console.warn('Không thể parse captions:', e);
+                    return;
+                }
+
+                const transformedCaptions = captions.map(label => labelToVietnamese[label] || label);
+                list.innerHTML = '<strong>Captions:</strong>';
+                transformedCaptions.forEach(caption => {
+                    const div = document.createElement('div');
+                    div.className = 'caption-item';
+                    div.textContent = caption;
+                    list.appendChild(div);
+                });
+            });
+        });
     </script>
 </body>
 </html>

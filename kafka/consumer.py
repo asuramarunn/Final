@@ -12,7 +12,7 @@ import threading
 import json
 from datetime import datetime
 from collections import deque
-from human_att.code.florence2Class import Florence2Model
+from model import SigLIP
 
 app = Flask(__name__)
 message_counter = {}
@@ -23,7 +23,7 @@ MAX_FRAMES = 6
 
 def load_model():
     global model
-    model = Florence2Model()
+    model = SigLIP.load()
 
 last_frame_time = {}
 
@@ -39,7 +39,7 @@ def process_frame(frame_data, camera_id):
         fps = 2 / time_diff if time_diff > 0 else 0.0
     last_frame_time[camera_id] = current_time
     
-    processed_frame, captions = model.process_frame_tasks(frame_rgb)
+    processed_frame, captions = model
     
     if captions:
         if camera_id not in frame_history:
